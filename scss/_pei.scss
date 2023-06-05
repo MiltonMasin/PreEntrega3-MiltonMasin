@@ -1,0 +1,54 @@
+.categories{
+    input{
+        display: none;
+    }
+    label{
+        margin-right: 10px;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .card{
+        display: none;
+    }
+
+
+    #todos:checked ~ .cartas .card {
+        display: block;
+      }
+      #cabello:checked ~ .cartas .cabello,
+      #barba:checked ~ .cartas .barba,
+      #afeitado:checked ~ .cartas .afeitado {
+        display: block;
+      }
+      #todos:checked ~ .cartas .card {
+        display: block;
+      }
+
+      .container-labels{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      #todo:checked ~ .cartas .card{
+        display: block;
+      }
+      #rem:checked ~ .cartas .rem,
+      #gorras:checked ~ .cartas .gorras{
+        display: block;
+      }
+}
+
+.card{
+    margin-bottom: 20px;
+    .card-title{
+      text-align: center;
+    }
+
+}
+.card-body .btn{
+    display: flex;
+    justify-content: center;
+}
